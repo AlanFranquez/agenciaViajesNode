@@ -1,0 +1,36 @@
+//- Para poder usar bloques de html en varias paginas
+
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rion de Janeiro 
+        en Aventura
+
+block contenido 
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5.align-items-center 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisl eget mi suscipit tempus. Aliquam id massa eu tellus volutpat fermentum. Donec quis magna quam. Maecenas id nisl vel turpis consectetur porta. Suspendisse erat purus, pretium id ipsum a, sodales rhoncus erat. Etiam varius feugiat laoreet. Vivamus massa tellus, tempus quis finibus ac, facilisis eu lacus. Vestibulum vestibulum est sit amet metus pellentesque maximus. In hac habitasse platea dictumst. Duis est felis, rhoncus ut risus eu, congue efficitur ligula. Aliquam ut hendrerit erat. Nunc imperdiet ex ut lacinia 
+                p Etiam tempus sit amet turpis at pellentesque. Integer fermentum id quam et fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse in metus id nisl imperdiet posuere. In nec risus at sem porta venenatis vitae nec nunc. Donec hendrerit in nisl eget blandit. Proin aliquam sed quam a placerat. Etiam ac varius diam. Aliquam nec consectetur ligula, nec aliquam urna. Nam justo turpis, porttitor in lacinia nec, consequat eget dui.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen nosotros", class="img-fluid")
+
+        include ./layout/bloqueviaje
+
+    .descuento
+        .container
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Julio de 2022
+                        p.precio $2500 USD
+
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+
+        include ./layout/bloquetestimoniales
